@@ -1,0 +1,327 @@
+/* Base Css Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Base Css End */
+/* Navbar Start */
+header {
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+  font-weight: 600;
+  position: sticky;
+  z-index: 10;
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-row .header-left .logo {
+  height: 80px;
+  width: 120px;
+  display: flex;
+}
+.header-row .header-center .nav .nav-item {
+  display: flex;
+  gap: 10px;
+}
+.header-row .header-right .header-right-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header-row .header-right .header-right-links .shop-btn {
+  background-color: #008248;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 7px 16px;
+  cursor: pointer;
+}
+.header-row .header-right .header-right-links .shop-btn:hover {
+  color: #008248;
+  background-color: white;
+  border: 1px solid #008248;
+}
+.header-row .header-right .header-right-links .login-btn {
+  background-color: white;
+  font-size: 16px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 50px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.header-row .header-right .header-right-links .login-btn:hover {
+  background-color: black;
+  color: white;
+}
+.header-row .header-right .header-right-links .signup-btn {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 600;
+}
+.header-row .header-right .header-right-links .signup-btn:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+/* Navbar End */
+/* Main Start */
+main {
+  display: flex !important;
+  height: 100% !important;
+  flex-direction: column !important;
+  position: relative;
+  z-index: 1;
+}
+
+.main-left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  width: 40vw;
+}
+.main-right-grow {
+  margin-left: 40vw;
+  padding-top: 0px;
+  flex-grow: 1 !important;
+  overflow: hidden;
+}
+.foot-top {
+  background-color: #f7f7f7;
+}
+
+.main-right {
+  position: relative !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
+
+.main-left .video {
+  display: block;
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.main-right .main-right-container {
+  padding: 20px 40px;
+}
+
+.main-right-container .main-item .main-item-image {
+  width: 100%;
+}
+
+.main-right .main-right-container .main-item .main-item-info {
+  padding: 20px 40px;
+}
+.main-right .main-right-container .main-item .main-item-info h3 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 60px;
+  letter-spacing: 0.25px;
+}
+.main-right .main-right-container .main-item .main-item-info p {
+  color: #6c6c6c;
+  margin-bottom: 15px;
+}
+.main-right .main-right-container .main-item .main-item-button {
+  display: flex;
+  gap: 15px;
+}
+.main-right .main-right-container .main-item .main-item-button .btn {
+  background-color: #008248;
+  color: white;
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+.main-right .main-right-container .main-item .main-item-button .btn-right {
+  background-color: white;
+  color: #008248;
+  border: 1px solid #008248;
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.main-right .main-right-container .camping-item {
+  margin-bottom: 50px;
+  display: flex;
+}
+.main-right .main-right-container .camping-item .left {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+.main-right .main-right-container .camping-item .right {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+}
+.main-right .main-right-container .camping-item .right .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.015rem;
+}
+.main-right .main-right-container .camping-item .right .text {
+  color: #6c6c6c;
+}
+.main-right .main-right-container .camping-item .right .star-btn {
+  background-color: #008248;
+  border: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 50px;
+  padding: 7px 16px;
+  cursor: pointer;
+}
+.main-right .main-right-container .camping-item .right .star-btn:hover {
+  background-color: white;
+  color: #008248;
+  border: 1px solid #008248;
+}
+/* Main End */
+.hr-divider {
+  border: 0.1rem solid #ccc;
+}
+/* Footer Start */
+.star-footer {
+  background: #fff;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 50px;
+}
+
+.star-footer .star-foot-top .menu-list .menu-item {
+  padding: 40px 0px;
+}
+.star-footer .star-foot-top .menu-list .menu-item .menu-head {
+  display: flex;
+  cursor: pointer;
+}
+.star-footer .star-foot-top .menu-list .menu-item .menu-head .left {
+  display: inline-block;
+  width: calc(100% - 50px);
+  vertical-align: middle;
+}
+
+.star-footer .star-foot-top .menu-list .menu-item .menu-head .left .title {
+  font-size: 1.8rem;
+  line-height: 3.1rem;
+  letter-spacing: -0.015rem;
+  font-weight: 400;
+}
+
+.star-footer .star-foot-top .menu-list .menu-item .menu-head .right .close {
+  visibility: hidden;
+}
+
+.star-foot-bottom .social-icons ul {
+  display: flex;
+  gap: 15px;
+  padding: 20px 0px;
+  font-size: 25px;
+}
+
+.star-foot-bottom .second-link ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+.star-foot-bottom .second-link ul a {
+  font-size: 16px;
+  font-weight: 600;
+}
+.star-foot-bottom .second-link .translate-btn {
+  background-color: #008248;
+  border: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 50px;
+  padding: 7px 16px;
+  cursor: pointer;
+}
+.star-foot-bottom .second-link .translate-btn:hover {
+  background-color: white;
+  color: #008248;
+  border: 1px solid #008248;
+}
+/* Footer End */
+
+@media (max-width: 990px) {
+  main {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 576px) {
+    .header-center {
+      display: none;
+    }
+    .header-right {
+      display: none;
+    }
+  }
+}
